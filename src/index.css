@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+@import 'react-slideshow-image/dist/styles.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+.cut-text { 
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap;
+  }
+
+.box-shadow {
+    box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1)
+}
+
+.font-kumbh {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.each-slide > div{
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    background-position: center;
+    height: 350px;
+}
+
+.nav-links {
+    border-bottom: 4px solid transparent;
+    transition: all .4s ease-in-out;
+}
+
+.nav-links-hover {
+    border-bottom: 4px solid hsl(26, 100%, 55%);
+    color: red;
+}
+
+.btn-count-right{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.btn-count-left{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-carousel {
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 100%);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    filter: none;
+}
+
+.btn-carousel img:hover  {
+    filter: invert(0.4) sepia(1) saturate(20) hue-rotate(360deg) brightness(1.12);
+}
+
+.border-r-xs{
+    border-radius: 8px;
+}
+
+.border-r-sm{
+    border-radius: 15px;
+}
+
+.border-r-full {
+    border-radius: 50%;
+}
+
+.color-orange {
+    color: hsl(26, 100%, 55%)
+}
+
+.color-pale {
+    color: hsl(25, 100%, 94%)
+}
+
+.color-dark-blue {
+    color: hsl(220, 13%, 13%)
+}
+
+.color-darkgrayish-blue{ 
+    color: hsl(219, 9%, 45%)
+}
+
+.color-grayish-blue{ 
+    color: hsl(220, 14%, 75%)
+}
+
+.color-lightgrayish-blue{
+    color:  hsl(223, 64%, 98%)
+}
+
+.color-white {
+    color: hsl(0, 0%, 100%)
+}
+
+.d-none {
+    display:none;
+}
+
+.color-white-svg{
+    transition: all .3s ease-in-out;
+    filter: invert(120%) sepia(1410%) saturate(110%) hue-rotate(168deg) brightness(225%) contrast(102%);
+}
+
+.color-white-svg:hover{
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+
+.color-black{
+    color: hsl(0, 0%, 0%)
+}
+
+
+.bg-color-orange {
+    background: hsl(26, 100%, 55%)
+}
+
+.bg-color-pale {
+    background: hsl(25, 100%, 94%)
+}
+
+.bg-color-dark-blue {
+    background: hsl(220, 13%, 13%)
+}
+
+.bg-color-darkgrayish-blue{ 
+    background: hsl(219, 9%, 45%)
+}
+
+.bg-color-grayish-blue{ 
+    background: hsl(220, 14%, 75%)
+}
+
+.bg-color-lightgrayish-blue{
+    background:  hsl(223, 64%, 98%)
+}
+
+.bg-color-white {
+    background: hsl(0, 0%, 100%)
+}
+
+.bg-color-black{
+    background: hsl(0, 0%, 0%)
+}
+
+.little-slide{  
+    border:2px solid hsl(26, 100%, 55%);
+}
+
+.little-slide::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.40);
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: .4s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 1150px) {
+    #slide{
+        border-radius: 0px;
+    }
+}
